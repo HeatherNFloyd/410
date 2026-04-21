@@ -24,7 +24,7 @@ body {
     width: 930px;
     border-width: 1px;
     margin: 0 auto;
-    background-color: white;
+    background-color: url("beerbackground2.png");
 }
 
 
@@ -53,17 +53,26 @@ nav ul {
 }
 
 nav ul li a {
-    padding: 5px;
+    padding: 8px;
     color: black;
     text-decoration: none;
-    display:block;
+    display: block;
+    background-color: #f2e6d8; /* warm beige */
+    border: 2px solid #5a2e2e; /* brick red border */
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.25); /* soft shadow */
 }
 
+/* Hover effect */
 nav ul li a:hover {
-    background: gray;
-    border-radius: 10px;
-    color: white;
+    background-color: #ffe9c6; /* warm amber highlight */
+    color: #5a2e2e; /* brick text */
+    transform: scale(1.03);
+    transition: 0.2s ease-in-out;
 }
+
 
 nav img.navimg {
 	width: 100%;
@@ -79,7 +88,7 @@ nav img.navimg {
     color: black;
     border-left: 2px solid;
     border-right: 2px solid;    
-    background-image: url(images/ricepaper.jpg); 
+    background-color: #f2e6d8; 
 }
 
 #main ul {
@@ -110,6 +119,8 @@ aside {
     margin: 0 5px 0 5px;
     padding: 10px;
     float: right;
+    background-color: #f2e6d8; /* warm beige */
+	
 }
 
 aside img.asideimg {
@@ -139,7 +150,7 @@ footer {
     width: 910px;
     margin: 0;
     padding: 10px;
-    background-color: gray;
+    background-color: #A65E2E;
     clear: both;
     color: wheat;
     font-weight: bold;
@@ -168,3 +179,122 @@ footer a:visited {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* ===== MENU TABLE STYLES (Brick Wall Theme) ===== */
+.menutable {
+  width: 90%;
+  margin: 0 auto 25px auto;
+  border-collapse: collapse;
+  font-size: 1.1em;
+  background-color: #f2e6d8;
+  border: 2px solid #5a2e2e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menutable th {
+  background-color: #5a2e2e;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.menutable td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #d1c1b3;
+}
+
+.menutable tr:nth-child(even) {
+  background-color: #f8f1e8;
+}
+
+/* ===== HOVER EFFECT ===== */
+.menutable tr:hover {
+  background-color: #ffe9c6;
+  cursor: pointer;
+}
+
+/* ===== EVENTS PAGE STYLES ===== */
+
+/* ===== MATCHED WEEKLY CALENDAR STYLE ===== */
+
+.week-calendar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto 25px auto;
+}
+
+.day {
+  background-color: #f2e6d8; /* warm beige like menu tables */
+  border: 3px double #5a2e2e; /* brick red double border */
+  border-radius: 15px;
+  padding: 18px;
+  box-shadow: 6px 6px 12px rgba(0,0,0,0.3); /* same shadow style */
+  position: relative;
+  transition: 0.25s ease-in-out;
+}
+
+.day::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  box-shadow: inset 0 0 12px rgba(90,46,46,0.4); /* inner glow like menu */
+  pointer-events: none;
+}
+
+.day h3 {
+  color: #5a2e2e; /* brick red */
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.3em;
+  text-shadow: 1px 1px 1px #ffffff;
+}
+
+.day p {
+  margin: 6px 0;
+  color: #3b1f1f;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+/* Hover effect */
+.day:hover {
+  background-color: #ffe9c6; /* warm amber highlight */
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+/* Icons */
+.day p.pool::before {
+  content: "🎱 ";
+}
+
+.day p.darts::before {
+  content: "🎯 ";
+}
+
+.day p.tourney::before {
+  content: "🏆 ";
+}
+
+#loungehours {
+    background-image: url('images/brickwallheader.png'); /* same brick as header */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border: 2px double #5a2e2e; /* brick red border */
+    border-radius: 15px;
+    color: black;
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.3);
+    margin: 0 auto;
+    width: 85%;
+	text-align: center;
+}
+
+
+
