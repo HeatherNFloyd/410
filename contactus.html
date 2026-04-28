@@ -28,6 +28,7 @@
 </header> 
 
 <div id="wrapper" class="page-panel">
+
 		 
 <nav> 
 	<ul>
@@ -36,46 +37,55 @@
 	  <li><a href = "events.html">Events</a></li>
 	  <li><a href = "contactus.html">Contact Us</a></li>
 	</ul>
-</nav> 
+	
+  <img src = "images/people2.png" alt = "Group of People Playing Pool" />
+	<figcaption>
+    Come Shoot Your Shot<br />
+	At Some Good Times!
+  </figcaption> 
+</nav>
+ 
 	 
 <article id = "main"> 
 
-<h2>Elite Choices</h2>
-	
-<h3>Beautiful Cocktails</h3>
-	<p>Elite Sports Lounge offers a world of flavor and elegance. We have handcrafted cocktails that blend premium spirits, high-quality ingredients, and an elegant presentation that matches the unforgettable experience.</p>
+<h2>Contact Us</h2>
 
-<h3>Delicious Beer</h3>
-	<p>Elite Sports Lounge serves some of the best draft beers around. 
-	   Domestics, Imports, plus Craft beers to meet anyone and everyone's beer needs </p>
+<form class="contact-form">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
 
-<h3>Good Times & Good Friends</h3>
-	<p>Elite Sports Lounge doesn't want to sell you drink, we want to sell you MEMORIES! There are ample opportunities to enjoy the company of friends and family here at our lounge. We offer games, sports, laughs, food, and vibes. Your memories, friends, flavors, and fun can all be found in the same place. We hope to see you soon! </p>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>
 
 </article> <!-- end main -->
 
 <aside>
  
-<div id="loungehours">
-	<h3>Lounge Hours</h3>
-	<p>MON: 10 a.m. - 2 a.m.</p>
-	<p>TUE: 10 a.m. - 2 a.m.</p>
-	<p>WED: 10 a.m. - 2 a.m.</p>
-	<p>THU: 10 a.m. - 2 a.m.</p>
-	<p>FRI: 10 a.m. - 2 a.m.</p>
-	<p>SAT: 10 a.m. - 2 a.m.</p>
-	<p>SUN: 10 a.m. - 2 a.m.</p>
-	<p>CLOSED ON ALL MAJOR HOLIDAYS</p>
-	</div>
+<h2>Customer Reviews</h2>
 
-<figure>
-  <img src = "images/fixphoto.png" alt = "Group of four different cocktails" />
+<div class="reviews-panel">
+    <div class="review">
+        <p class="review-text">“Great atmosphere, amazing drinks, and friendly staff!”</p>
+        <p class="review-author">– Sarah M.</p>
+    </div>
 
-  <figcaption>
-    Variety of Different Drinks<br />
-    For All To Enjoy
-  </figcaption> 
-</figure>
+    <div class="review">
+        <p class="review-text">“Best place in town to watch the game.”</p>
+        <p class="review-author">– Jason R.</p>
+    </div>
+
+    <div class="review">
+        <p class="review-text">“Pool tables, cold beer, and good vibes. Love it here.”</p>
+        <p class="review-author">– Emily K.</p>
+    </div>
+</div>
+
 
 </aside>   
 

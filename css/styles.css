@@ -21,7 +21,7 @@ body {
 }
 
 #container {
-    width: 930px;
+    width: 950px;
     border-width: 1px;
     margin: 0 auto;
     background-color: url("beerbackground2.png");
@@ -29,7 +29,7 @@ body {
 
 
 header {
-    width: 910px;	/* reduced by 20px to accommodate shadow */
+    width: 970px;	/* reduced by 20px to accommodate shadow */
     margin-bottom: 30px;
     margin-top: 10px;
     text-align: center;
@@ -88,7 +88,6 @@ nav img.navimg {
     color: black;
     border-left: 2px solid;
     border-right: 2px solid;    
-    background-color: #f2e6d8; 
 }
 
 #main ul {
@@ -118,9 +117,7 @@ aside {
     width: 200px;
     margin: 0 5px 0 5px;
     padding: 10px;
-    float: right;
-    background-color: #f2e6d8; /* warm beige */
-	
+    float: right;	
 }
 
 aside img.asideimg {
@@ -165,6 +162,7 @@ footer {
     border: 2px solid;
     border-radius: 25px;
 }/* navigation for footer */
+
 footer a:link {
     color: white;
     text-decoration: none;
@@ -296,5 +294,85 @@ footer a:hover {
 	text-align: center;
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: rgba(43, 21, 10, 0.85); /* warm brick overlay */
+    padding: 25px;
+    border: 3px double #8b0000; /* brick-red double border */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    max-width: 600px;
+    margin: 30px auto;
+    color: #f5deb3; /* warm beige text */
+    font-family: 'Segoe UI', sans-serif;
+}
 
+.contact-form label {
+    font-weight: bold;
+    color: #f5deb3;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 2px solid #8b0000;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #b30000;
+    transform: scale(1.05);
+}
+
+.reviews-panel {
+    background-color: white;
+    border: 3px double #8b0000; /* brick-red border */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review-text {
+    font-size: 1.1rem;
+    color: #2b150a; /* dark warm brown */
+    font-style: italic;
+}
+
+.review-author {
+    text-align: right;
+    font-weight: bold;
+    color: #8b0000;
+}
+
+.page-panel {
+    background-color: rgba(245, 222, 179, 0.92); /* cream beige */
+    border: 3px double #8b0000;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 1000px; /* matches your header width visually */
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
 
