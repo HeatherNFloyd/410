@@ -351,7 +351,7 @@ footer a:hover {
 }
 
 .review {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .review-text {
@@ -375,4 +375,43 @@ footer a:hover {
     max-width: 1000px; /* matches your header width visually */
     box-shadow: 0 0 15px rgba(0,0,0,0.7);
 }
+
+.reviews-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.review-item {
+    background: rgba(43, 21, 10, 0.85); /* deep bar brown */
+    border: 3px double #8b0000;         /* brick red border */
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    color: #f5deb3;                     /* warm wheat text */
+    font-size: 1.1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.home-video {
+   text-align: center;
+   margin: 15px auto;
+}
+
+.home-video video {
+    border: 4px double #8b0000;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+	object-fit: cover;
+}
+
+.nav-video-row {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    clear: both;   /* ⭐ THIS restores the 3-pane layout */
+}
+
 
